@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "title": "Ruta Volcanes y Lagos",
+      "description": "Una travesía inolvidable por la Araucanía y Los Ríos.",
+      "price": 49000,
+      "date": "13 - 14 Abril 2025",
+      "image": "/trip1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Fin de Semana Motero",
+      "description": "Asado, camping y ruta entre amigos.",
+      "price": 35000,
+      "date": "20 - 21 Abril 2025",
+      "image": "/trip2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Cruce Cordillerano",
+      "description": "Aventura extrema desde la costa a la frontera.",
+      "price": 79000,
+      "date": "27 - 28 Abril 2025",
+      "image": "/trip3.jpg"
+    }
+  ]
+  
