@@ -15,7 +15,7 @@ html, body, #root {
 
 /* --- HERO SECTION --- */
 .hero-section {
-  background-image: url('hero1.jpg'); /* Cambia por tu nombre de archivo */
+  background-image: url('hero.jpg'); /* Cambia por tu nombre de archivo */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
