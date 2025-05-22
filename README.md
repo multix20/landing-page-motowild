@@ -1,9 +1,5 @@
 [![Moto Shop Landing Page on Behance](https://tse4.mm.bing.net/th?id=OIP.9_wuwtFsS8kpZsMFJSdu7QHaFJ\&pid=Api)](https://www.behance.net/gallery/182781887/Moto-Shop-Landing-Page)
 
-Por supuesto, he analizado tu repositorio [landing-page-motowild](https://github.com/multix20/landing-page-motowild) y a continuación te presento una propuesta detallada para el archivo `README.md`. Esta propuesta está estructurada de manera formal y completa, con el objetivo de proporcionar una documentación clara y profesional para tu proyecto.
-
----
-
 # Motowild Landing Page
 
 **Motowild Landing Page** es una aplicación web desarrollada con React y Vite, diseñada para presentar una página de destino moderna y atractiva para una marca ficticia de motocicletas llamada "Motowild". Este proyecto tiene como objetivo demostrar habilidades en desarrollo front-end, diseño responsivo y buenas prácticas en la creación de interfaces de usuario.
@@ -82,4 +78,3 @@ Este proyecto está licenciado bajo la [MIT License](LICENSE).
 
 ---
 
-Si deseas personalizar aún más este `README.md`, como agregar secciones de preguntas frecuentes, contribuciones o detalles específicos del diseño, no dudes en indicármelo y con gusto te asistiré en la elaboración de esas secciones adicionales.
