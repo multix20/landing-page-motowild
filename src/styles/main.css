@@ -82,20 +82,17 @@ html, body, #root {
 
 /* Botón borde blanco */
 .btn-secondary {
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 600;
-  text-decoration: none;
-  border: 2px solid #2e7d32;
-  color: #2e7d32;
-  background: transparent;
-  transition: all 0.3s ease;
+  background-color: #28a745; /* Verde */
+  color: #fff;
+  border: none;
+  padding: 0.75em 1.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 .btn-secondary:hover {
-  background-color: #2e7d32;
-  color: #fff;
+  background-color: #218838; /* Verde más oscuro al pasar el mouse */
 }
 
 /* --- SECCIÓN PRÓXIMOS VIAJES --- */
