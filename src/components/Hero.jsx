@@ -118,20 +118,6 @@ const Hero = () => {
           MOTO WILD
         </motion.h1>
 
-        {/* Subtitle */}
-        <motion.p
-          className="text-xl md:text-2xl lg:text-3xl text-gray-200 font-light tracking-wide mb-12"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.5 }}
-        >
-          Vive la aventura.{' '}
-          <span className="text-orange-400 font-medium">Camping</span>,{' '}
-          <span className="text-orange-400 font-medium">rutas</span>,{' '}
-          <span className="text-orange-400 font-medium">fogatas</span> y{' '}
-          <span className="text-orange-400 font-medium">amistad</span>.
-        </motion.p>
-
         {/* Feature Icons */}
         <motion.div
           className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12"
@@ -165,35 +151,6 @@ const Hero = () => {
               </motion.span>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* CTA Buttons */}
-        <motion.div
-          className="hero-buttons flex flex-col sm:flex-row gap-6 mt-8 mb-16 justify-center items-center w-full max-w-md mx-auto"
-          variants={itemVariants}
-        >
-          <motion.a
-            href="#trips"
-            className="btn group relative px-10 py-4 bg-orange-500 text-white font-bold text-lg rounded-full shadow-lg hover:bg-orange-600 transition-all duration-300 flex items-center justify-center"
-            whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="relative z-10 flex items-center justify-center">
-              Ver próximos viajes
-              <ChevronRight className="ml-2 w-5 h-5" />
-            </span>
-          </motion.a>
-
-          <motion.a
-            href="#store"
-            className="btn-secondary group px-10 py-4 bg-green-500 text-white font-bold text-lg rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 flex items-center justify-center"
-            whileHover={{ scale: 1.05, y: -3 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <span className="relative z-10 flex items-center justify-center">
-              Ver tienda
-            </span>
-          </motion.a>
         </motion.div>
 
         {/* Scroll Indicator */}
