@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-brand">
-          <h3>MotoWild</h3>
+          <h3>MotoCamp</h3>
           <p>La comunidad motera del sur del mundo</p>
         </div>
 
@@ -19,13 +19,13 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <a href="https://instagram.com/motowild" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://tiktok.com/@motowild" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://instagram.com/motocamp" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://tiktok.com/@motocamp" target="_blank" rel="noopener noreferrer">TikTok</a>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 MotoWild. Todos los derechos reservados.</p>
+        <p>© 2025 MotoCamp. Todos los derechos reservados.</p>
       </div>
     </footer>
   );

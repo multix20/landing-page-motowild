@@ -23,11 +23,11 @@ function AnimatedRoutes() {
           element={
             <>
               <Hero />
-              <TripsList /> {/* ← Aquí llamamos el nuevo componente dinámico */}
               <Community />
+              <TripsList /> {/* ← Aquí llamamos el nuevo componente dinámico */}
               <Testimonials />
-              <Newsletter />
               <MapRoutes />
+              <Newsletter />
               <Footer />
             </>
           }

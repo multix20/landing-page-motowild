@@ -115,43 +115,49 @@ const Hero = () => {
           transition={{ duration: 3, repeat: Infinity }}
           variants={itemVariants}
         >
-          MOTO WILD
+          MOTO CAMP
         </motion.h1>
 
-        {/* Feature Icons */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12"
-          variants={itemVariants}
+  className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-12"
+  variants={itemVariants}
+>
+  {[
+    { icon: Mountain, label: 'Rutas épicas', color: 'from-blue-500 to-cyan-500', link: '#trips' }, // Enlace actualizado
+    { icon: Tent, label: 'Camping', color: 'from-green-500 to-emerald-500', link: '#camping' },
+    { icon: Flame, label: 'Fogatas', color: 'from-red-500 to-orange-500', link: '#testimonials' },
+    { icon: Users, label: 'Comunidad', color: 'from-purple-500 to-pink-500', link: '#community' }
+  ].map((item, index) => (
+    <motion.div
+      key={index}
+      className="group flex flex-col items-center text-center"
+      variants={floatingVariants}
+      animate="animate"
+      whileHover={{ scale: 1.1 }}
+    >
+      <motion.a
+        href={item.link}
+        className="group flex flex-col items-center text-center cursor-pointer"
+        whileTap={{ scale: 0.95 }}
+      >
+        <div
+          className={`bg-gradient-to-br ${item.color} p-4 rounded-full shadow-xl group-hover:shadow-orange-500/50 transition-all duration-300`}
         >
-          {[
-            { icon: Mountain, label: 'Rutas épicas', color: 'from-blue-500 to-cyan-500' },
-            { icon: Tent, label: 'Camping', color: 'from-green-500 to-emerald-500' },
-            { icon: Flame, label: 'Fogatas', color: 'from-red-500 to-orange-500' },
-            { icon: Users, label: 'Comunidad', color: 'from-purple-500 to-pink-500' }
-          ].map((item, index) => (
-            <motion.div
-              key={index}
-              className="group flex flex-col items-center text-center"
-              variants={floatingVariants}
-              animate="animate"
-              whileHover={{ scale: 1.1 }}
-            >
-              <div
-                className={`bg-gradient-to-br ${item.color} p-4 rounded-full shadow-xl group-hover:shadow-orange-500/50 transition-all duration-300`}
-              >
-                <item.icon className="w-8 h-8 text-white" />
-              </div>
-              <motion.span
-                className="mt-2 text-sm text-gray-300 font-medium"
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                {item.label}
-              </motion.span>
-            </motion.div>
-          ))}
-        </motion.div>
+          <item.icon className="w-8 h-8 text-white" />
+        </div>
+        <motion.span
+          className="mt-2 text-sm text-white font-medium" // Cambiado de text-gray-300 a text-white
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          {item.label}
+        </motion.span>
+      </motion.a>
+    </motion.div>
+  ))}
+</motion.div>
+
 
         {/* Scroll Indicator */}
         <motion.div
