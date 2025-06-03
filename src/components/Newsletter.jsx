@@ -22,191 +22,191 @@ const Newsletter = () => {
     setTimeout(() => setIsSubmitted(false), 3000);
   };
 
-  const styles = {
-    section: {
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '1.5rem',
-      position: 'relative',
-      overflow: 'hidden',
-      fontFamily: 'system-ui, -apple-system, sans-serif'
-    },
-    backgroundEffect: {
-      position: 'absolute',
-      inset: 0,
-      opacity: 0.2,
-      pointerEvents: 'none'
-    },
-    particle: {
-      position: 'absolute',
-      width: '8px',
-      height: '8px',
-      background: 'rgba(255, 255, 255, 0.3)',
-      borderRadius: '50%',
-      animation: 'float 3s ease-in-out infinite'
-    },
-    container: {
-      position: 'relative',
-      zIndex: 10,
-      maxWidth: '32rem',
-      width: '100%'
-    },
-    card: {
-      backdropFilter: 'blur(20px)',
-      background: 'rgba(255, 255, 255, 0.1)',
-      borderRadius: '1.5rem',
-      padding: '3rem 2rem',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
-      boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
-      transition: 'transform 0.5s ease',
-      ':hover': {
-        transform: 'scale(1.02)'
-      }
-    },
-    header: {
-      textAlign: 'center',
-      marginBottom: '2rem'
-    },
-    iconContainer: {
-      display: 'inline-flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '5rem',
-      height: '5rem',
-      background: 'linear-gradient(45deg, #a855f7, #ec4899)',
-      borderRadius: '50%',
-      marginBottom: '1.5rem',
-      animation: 'spin 8s linear infinite'
-    },
-    title: {
-      fontSize: '2.5rem',
-      fontWeight: 'bold',
-      color: 'white',
-      marginBottom: '1rem',
-      lineHeight: '1.2'
-    },
-    gradient: {
-      background: 'linear-gradient(45deg, #c084fc, #f9a8d4)',
-      WebkitBackgroundClip: 'text',
-      WebkitTextFillColor: 'transparent',
-      backgroundClip: 'text'
-    },
-    subtitle: {
-      fontSize: '1.125rem',
-      color: '#d1d5db',
-      lineHeight: '1.6',
-      maxWidth: '28rem',
-      margin: '0 auto'
-    },
-    formContainer: {
-      marginBottom: '2rem'
-    },
-    input: {
-      width: '100%',
-      padding: '1rem 1.5rem',
-      fontSize: '1.125rem',
-      background: 'rgba(255, 255, 255, 0.1)',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
-      borderRadius: '1rem',
-      color: 'white',
-      marginBottom: '1.5rem',
-      transition: 'all 0.3s ease',
-      outline: 'none',
-      '::placeholder': {
-        color: '#9ca3af'
-      }
-    },
-    inputFocus: {
-      borderColor: '#a855f7',
-      boxShadow: '0 0 0 4px rgba(168, 85, 247, 0.3)'
-    },
-    button: {
-      width: '100%',
-      padding: '1rem 2rem',
-      fontSize: '1.125rem',
-      fontWeight: '600',
-      color: 'white',
-      background: 'linear-gradient(45deg, #9333ea, #ec4899)',
-      borderRadius: '1rem',
-      border: 'none',
-      cursor: 'pointer',
-      transition: 'all 0.3s ease',
-      boxShadow: '0 10px 25px rgba(147, 51, 234, 0.3)',
-      outline: 'none'
-    },
-    buttonHover: {
-      transform: 'translateY(-2px)',
-      boxShadow: '0 15px 35px rgba(147, 51, 234, 0.4)'
-    },
-    buttonDisabled: {
-      opacity: 0.5,
-      cursor: 'not-allowed',
-      transform: 'none'
-    },
-    successMessage: {
-      textAlign: 'center',
-      padding: '1rem',
-      background: 'rgba(34, 197, 94, 0.2)',
-      border: '1px solid rgba(74, 222, 128, 0.3)',
-      borderRadius: '0.75rem',
-      marginBottom: '1.5rem',
-      animation: 'pulse 2s infinite'
-    },
-    successText: {
-      color: '#86efac',
-      fontWeight: '500'
-    },
-    whatsappLink: {
-      display: 'inline-flex',
-      alignItems: 'center',
-      gap: '0.75rem',
-      padding: '0.75rem 1.5rem',
-      color: 'rgba(255, 255, 255, 0.8)',
-      border: '1px solid rgba(255, 255, 255, 0.2)',
-      borderRadius: '2rem',
-      textDecoration: 'none',
-      transition: 'all 0.3s ease',
-      fontSize: '0.95rem'
-    },
-    whatsappLinkHover: {
-      color: 'white',
-      background: 'rgba(255, 255, 255, 0.1)'
-    },
-    trustIndicators: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '2rem',
-      marginTop: '2rem',
-      paddingTop: '1.5rem',
-      borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-      flexWrap: 'wrap'
-    },
-    trustItem: {
-      display: 'flex',
-      alignItems: 'center',
-      gap: '0.5rem',
-      color: '#9ca3af',
-      fontSize: '0.875rem'
-    },
-    spinner: {
-      width: '1.25rem',
-      height: '1.25rem',
-      border: '2px solid rgba(255, 255, 255, 0.3)',
-      borderTop: '2px solid white',
-      borderRadius: '50%',
-      animation: 'spin 1s linear infinite'
-    },
-    loadingContainer: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '0.5rem'
+ const styles = {
+  section: {
+    minHeight: '100vh',
+    background: 'linear-gradient(135deg, #a0b0bb 0%, #dfcaac 50%, #90a0b1 100%)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '1.5rem',
+    position: 'relative',
+    overflow: 'hidden',
+    fontFamily: 'system-ui, -apple-system, sans-serif'
+  },
+  backgroundEffect: {
+    position: 'absolute',
+    inset: 0,
+    opacity: 0.18,
+    pointerEvents: 'none'
+  },
+  particle: {
+    position: 'absolute',
+    width: '8px',
+    height: '8px',
+    background: 'rgba(144, 160, 177, 0.25)', // #90a0b1
+    borderRadius: '50%',
+    animation: 'float 3s ease-in-out infinite'
+  },
+  container: {
+    position: 'relative',
+    zIndex: 10,
+    maxWidth: '32rem',
+    width: '100%'
+  },
+  card: {
+    backdropFilter: 'blur(20px)',
+    background: 'rgba(160, 176, 187, 0.18)', // #a0b0bb
+    borderRadius: '1.5rem',
+    padding: '3rem 2rem',
+    border: '1px solid #90a0b1',
+    boxShadow: '0 25px 50px -12px rgba(144, 160, 177, 0.18)',
+    transition: 'transform 0.5s ease',
+    ':hover': {
+      transform: 'scale(1.02)'
     }
-  };
+  },
+  header: {
+    textAlign: 'center',
+    marginBottom: '2rem'
+  },
+  iconContainer: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: '5rem',
+    height: '5rem',
+    background: 'linear-gradient(45deg, #a0b0bb, #90a0b1)',
+    borderRadius: '50%',
+    marginBottom: '1.5rem',
+    animation: 'spin 8s linear infinite'
+  },
+  title: {
+    fontSize: '2.5rem',
+    fontWeight: 'bold',
+    color: '#22313a', // fuerte contraste
+    marginBottom: '1rem',
+    lineHeight: '1.2'
+  },
+  gradient: {
+    background: 'linear-gradient(45deg, #a0b0bb, #dfcaac)',
+    WebkitBackgroundClip: 'text',
+    WebkitTextFillColor: 'transparent',
+    backgroundClip: 'text'
+  },
+  subtitle: {
+    fontSize: '1.125rem',
+    color: '#90a0b1',
+    lineHeight: '1.6',
+    maxWidth: '28rem',
+    margin: '0 auto'
+  },
+  formContainer: {
+    marginBottom: '2rem'
+  },
+  input: {
+    width: '100%',
+    padding: '1rem 1.5rem',
+    fontSize: '1.125rem',
+    background: 'rgba(223, 202, 172, 0.09)', // #dfcaac
+    border: '1px solid #a0b0bb',
+    borderRadius: '1rem',
+    color: '#22313a',
+    marginBottom: '1.5rem',
+    transition: 'all 0.3s ease',
+    outline: 'none',
+    '::placeholder': {
+      color: '#a0b0bb'
+    }
+  },
+  inputFocus: {
+    borderColor: '#90a0b1',
+    boxShadow: '0 0 0 4px rgba(144, 160, 177, 0.24)'
+  },
+  button: {
+    width: '100%',
+    padding: '1rem 2rem',
+    fontSize: '1.125rem',
+    fontWeight: '600',
+    color: '#22313a',
+    background: 'linear-gradient(45deg, #a0b0bb, #dfcaac, #90a0b1)',
+    borderRadius: '1rem',
+    border: 'none',
+    cursor: 'pointer',
+    transition: 'all 0.3s ease',
+    boxShadow: '0 10px 25px rgba(160, 176, 187, 0.14)',
+    outline: 'none'
+  },
+  buttonHover: {
+    transform: 'translateY(-2px)',
+    boxShadow: '0 15px 35px rgba(144, 160, 177, 0.21)'
+  },
+  buttonDisabled: {
+    opacity: 0.5,
+    cursor: 'not-allowed',
+    transform: 'none'
+  },
+  successMessage: {
+    textAlign: 'center',
+    padding: '1rem',
+    background: 'rgba(144, 160, 177, 0.13)', // #90a0b1
+    border: '1px solid #a0b0bb',
+    borderRadius: '0.75rem',
+    marginBottom: '1.5rem',
+    animation: 'pulse 2s infinite'
+  },
+  successText: {
+    color: '#90a0b1',
+    fontWeight: '500'
+  },
+  whatsappLink: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.75rem',
+    padding: '0.75rem 1.5rem',
+    color: '#22313a',
+    border: '1px solid #a0b0bb',
+    borderRadius: '2rem',
+    textDecoration: 'none',
+    transition: 'all 0.3s ease',
+    fontSize: '0.95rem'
+  },
+  whatsappLinkHover: {
+    color: '#fff',
+    background: 'rgba(160, 176, 187, 0.13)'
+  },
+  trustIndicators: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '2rem',
+    marginTop: '2rem',
+    paddingTop: '1.5rem',
+    borderTop: '1px solid #a0b0bb',
+    flexWrap: 'wrap'
+  },
+  trustItem: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    color: '#a0b0bb',
+    fontSize: '0.875rem'
+  },
+  spinner: {
+    width: '1.25rem',
+    height: '1.25rem',
+    border: '2px solid #a0b0bb',
+    borderTop: '2px solid #90a0b1',
+    borderRadius: '50%',
+    animation: 'spin 1s linear infinite'
+  },
+  loadingContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '0.5rem'
+  }
+};
 
   return (
     <section style={styles.section}>
