@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 const RoutePage = () => {
   const { id } = useParams();
@@ -119,8 +119,8 @@ const RoutePage = () => {
 
         {/* Botones de acción */}
         <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem' }}>
-          <a
-            href="/#trips"
+          <Link
+            to="/#trips"
             className="btn"
             style={{
               textDecoration: 'none',
@@ -132,7 +132,7 @@ const RoutePage = () => {
             }}
           >
             Volver a rutas
-          </a>
+          </Link>
 
           <a
             href="https://wa.me/56951569704?text=Hola%20quiero%20reservar%20una%20salida%20en%20moto%20✌🏼"
