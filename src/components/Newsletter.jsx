@@ -25,14 +25,14 @@ const Newsletter = () => {
  const styles = {
   section: {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%)',
+    background: '#fffaf0',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '1.5rem',
     position: 'relative',
     overflow: 'hidden',
-    color: '#fff',
+    color: '#333',
     fontFamily: 'system-ui, -apple-system, sans-serif'
   },
   backgroundEffect: {
@@ -45,7 +45,7 @@ const Newsletter = () => {
     position: 'absolute',
     width: '8px',
     height: '8px',
-    background: 'rgba(255, 255, 255, 0.25)',
+    background: 'rgba(0, 0, 0, 0.1)',
     borderRadius: '50%',
     animation: 'float 3s ease-in-out infinite'
   },
@@ -57,11 +57,11 @@ const Newsletter = () => {
   },
   card: {
     backdropFilter: 'blur(20px)',
-    background: 'rgba(255, 255, 255, 0.08)',
+    background: '#ffffff',
     borderRadius: '1.5rem',
     padding: '3rem 2rem',
-    border: '1px solid rgba(255, 255, 255, 0.2)',
-    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+    border: '1px solid rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.1)',
     transition: 'transform 0.5s ease',
     ':hover': {
       transform: 'scale(1.02)'
@@ -85,7 +85,7 @@ const Newsletter = () => {
   title: {
     fontSize: '2.5rem',
     fontWeight: 'bold',
-    color: '#fff',
+    color: '#333',
     marginBottom: '1rem',
     lineHeight: '1.2'
   },
@@ -97,7 +97,7 @@ const Newsletter = () => {
   },
   subtitle: {
     fontSize: '1.125rem',
-    color: '#e0e0e0',
+    color: '#555',
     lineHeight: '1.6',
     maxWidth: '28rem',
     margin: '0 auto'
@@ -109,20 +109,20 @@ const Newsletter = () => {
     width: '100%',
     padding: '1rem 1.5rem',
     fontSize: '1.125rem',
-    background: 'rgba(255, 255, 255, 0.1)',
-    border: '1px solid #fff',
+    background: '#fff',
+    border: '1px solid #ccc',
     borderRadius: '1rem',
-    color: '#fff',
+    color: '#333',
     marginBottom: '1.5rem',
     transition: 'all 0.3s ease',
     outline: 'none',
     '::placeholder': {
-      color: '#eee'
+      color: '#888'
     }
   },
   inputFocus: {
     borderColor: '#ff6600',
-    boxShadow: '0 0 0 4px rgba(255, 102, 0, 0.4)'
+    boxShadow: '0 0 0 4px rgba(255, 102, 0, 0.2)'
   },
   button: {
     width: '100%',
@@ -150,14 +150,14 @@ const Newsletter = () => {
   successMessage: {
     textAlign: 'center',
     padding: '1rem',
-    background: 'rgba(0, 0, 0, 0.3)',
+    background: 'rgba(0, 0, 0, 0.05)',
     border: '1px solid #ff6600',
     borderRadius: '0.75rem',
     marginBottom: '1.5rem',
     animation: 'pulse 2s infinite'
   },
   successText: {
-    color: '#fff',
+    color: '#333',
     fontWeight: '500'
   },
   whatsappLink: {
@@ -165,8 +165,8 @@ const Newsletter = () => {
     alignItems: 'center',
     gap: '0.75rem',
     padding: '0.75rem 1.5rem',
-    color: '#fff',
-    border: '1px solid #fff',
+    color: '#ff6600',
+    border: '1px solid #ff6600',
     borderRadius: '2rem',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
@@ -174,7 +174,7 @@ const Newsletter = () => {
   },
   whatsappLinkHover: {
     color: '#fff',
-    background: 'rgba(255, 255, 255, 0.1)'
+    background: '#ff6600'
   },
   trustIndicators: {
     display: 'flex',
@@ -183,14 +183,14 @@ const Newsletter = () => {
     gap: '2rem',
     marginTop: '2rem',
     paddingTop: '1.5rem',
-    borderTop: '1px solid rgba(255, 255, 255, 0.2)',
+    borderTop: '1px solid rgba(0, 0, 0, 0.1)',
     flexWrap: 'wrap'
   },
   trustItem: {
     display: 'flex',
     alignItems: 'center',
     gap: '0.5rem',
-    color: '#fff',
+    color: '#333',
     fontSize: '0.875rem'
   },
   spinner: {
@@ -227,7 +227,7 @@ const Newsletter = () => {
           }
           .newsletter-input:focus {
             border-color: #ff6600 !important;
-            box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.4) !important;
+            box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.2) !important;
           }
           .newsletter-button:hover:not(:disabled) {
             transform: translateY(-2px) !important;
@@ -235,7 +235,7 @@ const Newsletter = () => {
           }
           .newsletter-whatsapp:hover {
             color: white !important;
-            background: rgba(255, 255, 255, 0.1) !important;
+            background: #ff6600 !important;
           }
         `}
       </style>
