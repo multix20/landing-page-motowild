@@ -25,26 +25,27 @@ const Newsletter = () => {
  const styles = {
   section: {
     minHeight: '100vh',
-    background: 'linear-gradient(135deg, #a0b0bb 0%, #dfcaac 50%, #90a0b1 100%)',
+    background: 'linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     padding: '1.5rem',
     position: 'relative',
     overflow: 'hidden',
+    color: '#fff',
     fontFamily: 'system-ui, -apple-system, sans-serif'
   },
   backgroundEffect: {
     position: 'absolute',
     inset: 0,
-    opacity: 0.18,
+    opacity: 0.15,
     pointerEvents: 'none'
   },
   particle: {
     position: 'absolute',
     width: '8px',
     height: '8px',
-    background: 'rgba(144, 160, 177, 0.25)', // #90a0b1
+    background: 'rgba(255, 255, 255, 0.25)',
     borderRadius: '50%',
     animation: 'float 3s ease-in-out infinite'
   },
@@ -56,11 +57,11 @@ const Newsletter = () => {
   },
   card: {
     backdropFilter: 'blur(20px)',
-    background: 'rgba(160, 176, 187, 0.18)', // #a0b0bb
+    background: 'rgba(255, 255, 255, 0.08)',
     borderRadius: '1.5rem',
     padding: '3rem 2rem',
-    border: '1px solid #90a0b1',
-    boxShadow: '0 25px 50px -12px rgba(144, 160, 177, 0.18)',
+    border: '1px solid rgba(255, 255, 255, 0.2)',
+    boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
     transition: 'transform 0.5s ease',
     ':hover': {
       transform: 'scale(1.02)'
@@ -76,7 +77,7 @@ const Newsletter = () => {
     justifyContent: 'center',
     width: '5rem',
     height: '5rem',
-    background: 'linear-gradient(45deg, #a0b0bb, #90a0b1)',
+    background: 'linear-gradient(45deg, #ff6600, #e85500)',
     borderRadius: '50%',
     marginBottom: '1.5rem',
     animation: 'spin 8s linear infinite'
@@ -84,19 +85,19 @@ const Newsletter = () => {
   title: {
     fontSize: '2.5rem',
     fontWeight: 'bold',
-    color: '#22313a', // fuerte contraste
+    color: '#fff',
     marginBottom: '1rem',
     lineHeight: '1.2'
   },
   gradient: {
-    background: 'linear-gradient(45deg, #a0b0bb, #dfcaac)',
+    background: 'linear-gradient(45deg, #ff6600, #ffa040)',
     WebkitBackgroundClip: 'text',
     WebkitTextFillColor: 'transparent',
     backgroundClip: 'text'
   },
   subtitle: {
     fontSize: '1.125rem',
-    color: '#90a0b1',
+    color: '#e0e0e0',
     lineHeight: '1.6',
     maxWidth: '28rem',
     margin: '0 auto'
@@ -108,38 +109,38 @@ const Newsletter = () => {
     width: '100%',
     padding: '1rem 1.5rem',
     fontSize: '1.125rem',
-    background: 'rgba(223, 202, 172, 0.09)', // #dfcaac
-    border: '1px solid #a0b0bb',
+    background: 'rgba(255, 255, 255, 0.1)',
+    border: '1px solid #fff',
     borderRadius: '1rem',
-    color: '#22313a',
+    color: '#fff',
     marginBottom: '1.5rem',
     transition: 'all 0.3s ease',
     outline: 'none',
     '::placeholder': {
-      color: '#a0b0bb'
+      color: '#eee'
     }
   },
   inputFocus: {
-    borderColor: '#90a0b1',
-    boxShadow: '0 0 0 4px rgba(144, 160, 177, 0.24)'
+    borderColor: '#ff6600',
+    boxShadow: '0 0 0 4px rgba(255, 102, 0, 0.4)'
   },
   button: {
     width: '100%',
     padding: '1rem 2rem',
     fontSize: '1.125rem',
     fontWeight: '600',
-    color: '#22313a',
-    background: 'linear-gradient(45deg, #a0b0bb, #dfcaac, #90a0b1)',
+    color: '#fff',
+    background: '#ff6600',
     borderRadius: '1rem',
     border: 'none',
     cursor: 'pointer',
     transition: 'all 0.3s ease',
-    boxShadow: '0 10px 25px rgba(160, 176, 187, 0.14)',
+    boxShadow: '0 10px 25px rgba(0, 0, 0, 0.2)',
     outline: 'none'
   },
   buttonHover: {
     transform: 'translateY(-2px)',
-    boxShadow: '0 15px 35px rgba(144, 160, 177, 0.21)'
+    boxShadow: '0 15px 35px rgba(0, 0, 0, 0.35)'
   },
   buttonDisabled: {
     opacity: 0.5,
@@ -149,14 +150,14 @@ const Newsletter = () => {
   successMessage: {
     textAlign: 'center',
     padding: '1rem',
-    background: 'rgba(144, 160, 177, 0.13)', // #90a0b1
-    border: '1px solid #a0b0bb',
+    background: 'rgba(0, 0, 0, 0.3)',
+    border: '1px solid #ff6600',
     borderRadius: '0.75rem',
     marginBottom: '1.5rem',
     animation: 'pulse 2s infinite'
   },
   successText: {
-    color: '#90a0b1',
+    color: '#fff',
     fontWeight: '500'
   },
   whatsappLink: {
@@ -164,8 +165,8 @@ const Newsletter = () => {
     alignItems: 'center',
     gap: '0.75rem',
     padding: '0.75rem 1.5rem',
-    color: '#22313a',
-    border: '1px solid #a0b0bb',
+    color: '#fff',
+    border: '1px solid #fff',
     borderRadius: '2rem',
     textDecoration: 'none',
     transition: 'all 0.3s ease',
@@ -173,7 +174,7 @@ const Newsletter = () => {
   },
   whatsappLinkHover: {
     color: '#fff',
-    background: 'rgba(160, 176, 187, 0.13)'
+    background: 'rgba(255, 255, 255, 0.1)'
   },
   trustIndicators: {
     display: 'flex',
@@ -182,21 +183,21 @@ const Newsletter = () => {
     gap: '2rem',
     marginTop: '2rem',
     paddingTop: '1.5rem',
-    borderTop: '1px solid #a0b0bb',
+    borderTop: '1px solid rgba(255, 255, 255, 0.2)',
     flexWrap: 'wrap'
   },
   trustItem: {
     display: 'flex',
     alignItems: 'center',
     gap: '0.5rem',
-    color: '#a0b0bb',
+    color: '#fff',
     fontSize: '0.875rem'
   },
   spinner: {
     width: '1.25rem',
     height: '1.25rem',
-    border: '2px solid #a0b0bb',
-    borderTop: '2px solid #90a0b1',
+    border: '2px solid #fff',
+    borderTop: '2px solid #ff6600',
     borderRadius: '50%',
     animation: 'spin 1s linear infinite'
   },
@@ -225,12 +226,12 @@ const Newsletter = () => {
             50% { opacity: 0.8; }
           }
           .newsletter-input:focus {
-            border-color: #a855f7 !important;
-            box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.3) !important;
+            border-color: #ff6600 !important;
+            box-shadow: 0 0 0 4px rgba(255, 102, 0, 0.4) !important;
           }
           .newsletter-button:hover:not(:disabled) {
             transform: translateY(-2px) !important;
-            box-shadow: 0 15px 35px rgba(147, 51, 234, 0.4) !important;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35) !important;
           }
           .newsletter-whatsapp:hover {
             color: white !important;
@@ -247,7 +248,7 @@ const Newsletter = () => {
           left: '25%',
           width: '18rem',
           height: '18rem',
-          background: '#a855f7',
+          background: '#ff6600',
           borderRadius: '50%',
           filter: 'blur(60px)',
           animation: 'pulse 4s infinite'
@@ -258,7 +259,7 @@ const Newsletter = () => {
           right: '25%',
           width: '24rem',
           height: '24rem',
-          background: '#3b82f6',
+          background: '#e85500',
           borderRadius: '50%',
           filter: 'blur(60px)',
           animation: 'pulse 6s infinite',
