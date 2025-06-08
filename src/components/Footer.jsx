@@ -1,6 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
-import { Instagram, Tiktok } from 'lucide-react';
+import { Instagram, Music2 } from 'lucide-react';
 import '../styles/main.css';
 
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="TikTok"
           >
-            <Tiktok size={28} />
+            <Music2 size={28} />
           </a>
         </div>
       </div>
