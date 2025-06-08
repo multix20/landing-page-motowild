@@ -1,5 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
+import { Instagram, Music2 } from 'lucide-react';
 import '../styles/main.css';
 
 const Footer = () => {
@@ -19,8 +20,22 @@ const Footer = () => {
         </div>
 
         <div className="footer-social">
-          <a href="https://instagram.com/motocamp" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://tiktok.com/@motocamp" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a
+            href="https://instagram.com/motocamp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <Instagram size={28} />
+          </a>
+          <a
+            href="https://tiktok.com/@motocamp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+          >
+            <Music2 size={28} />
+          </a>
         </div>
       </div>
 
