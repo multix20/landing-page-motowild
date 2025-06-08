@@ -25,7 +25,7 @@ const Newsletter = () => {
  const styles = {
   section: {
     minHeight: '100vh',
-    background: '#fffaf0',
+    background: '#f0f4f8', // color blanco invierno
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',

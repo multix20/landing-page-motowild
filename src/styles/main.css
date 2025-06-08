@@ -262,8 +262,8 @@ html, body, #root {
 /* --- SECCIÓN NEWSLETTER Y WHATSAPP --- */
 .newsletter-section {
   padding: 4rem 2rem;
-  background-color: #2e7d32;
-  color: #fff;
+  background-color: #f0f4f8; /* color blanco invierno */
+  color: #333;
   text-align: center;
 }
 
@@ -280,7 +280,7 @@ html, body, #root {
 .newsletter-content p {
   font-size: 1rem;
   margin-bottom: 2rem;
-  color: #e0e0e0;
+  color: #555;
 }
 
 .newsletter-form {
@@ -316,7 +316,7 @@ html, body, #root {
 .whatsapp-link {
   display: inline-block;
   margin-top: 2rem;
-  color: #fff;
+  color: #ff6600;
   text-decoration: underline;
   font-size: 1rem;
 }
