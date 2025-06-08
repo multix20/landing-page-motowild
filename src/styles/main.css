@@ -423,6 +423,13 @@ html, body, #root {
   color: #eee;
   text-decoration: none;
   transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-social svg {
+  width: 28px;
+  height: 28px;
 }
 
 .footer-links a:hover,
