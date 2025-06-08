@@ -297,7 +297,7 @@ const Newsletter = () => {
             
             <h2 style={styles.title}>
               ¡Únete a la comunidad{' '}
-              <span style={styles.gradient}>MotoWild!</span>
+              <span style={styles.gradient}>MotoCamp!</span>
             </h2>
             
             <p style={styles.subtitle}>
